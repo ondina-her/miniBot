@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title >Mini Robot Web</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Mini Robot Web</h1>
+    <h2>Puntos: {{puntos}}</h1>
+
+    <table>
+        {% for i in range(5) %}
+        <tr>
+            {% for j in range(5) %}
+            <td>
+                {% if [i, j] == posicion %}
+                    🤖
+                {% else %}
+                    ⬜
+                {% endif %}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+    <form method="post">
+    <div class="botones">
+        <button name="direccion" value="arriba">↑</button>
+        <button name="direccion" value="izquierda">←</button>
+        <button name="direccion" value="abajo">↓</button>
+        <button name="direccion" value="derecha">→</button>
+        </div>
+    </form>
+</body>
+</html>
