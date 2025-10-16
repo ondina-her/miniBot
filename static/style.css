@@ -1,36 +1,52 @@
 body { font-family: Arial, sans-serif; padding: 20px; 
-background-color: #400a56;}
+background-color: #3c0852;}
 
 h1 { 
     font-size: 50px; 
     margin-bottom: 5px;
-    color: #dc943e; 
+    color: #F4C542; 
     text-align: center;
     padding: 15px;}
 
 h2 { 
     font-size: 15px; 
     margin-bottom: 5px;
-    color: #dc943e; 
+    color: #F4C542; 
     text-align: center;
     padding: 10px;
     }
 
 table { border-collapse: collapse; margin-bottom: 20px; 
         margin-left: auto; margin-right: auto; 
-        background-color: #8a5a9e;
+        background-color: #f8f2da;
         border: 2px solid #f8f2da;
         
         }
 td {
-            width: 50px; height: 50px;
-            text-align: center;
-            font-size: 24px;
-            border: 1px solid #f8f2da;
-            background-color: #8a5a9e;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    border: 1px solid #3c0852;
+    background-color: #F2E9DC; /* color base */
+}
 
-        }
-        .botones {
+.robot {
+  border:3px dashed #3c0852;
+}
+
+.green {
+  background-color: #6FCF97;
+}
+
+.red {
+  background-color: #EB5757;
+}
+
+
+
+.botones {
             margin-top: 30px;
             margin-left: auto;
             margin-right: auto;
@@ -38,6 +54,9 @@ td {
         }
 button { width: 60px; height: 40px; font-size: 16px; 
          margin: 5px; cursor: pointer; 
-        background-color: #5cc6a6;
-        border: wheat; color: white; border-radius: 5px; }
+        background-color: #219653;
+        border: wheat; color: white; border-radius: 5px; 
+      }
+button:hover { background-color: #27AE60; }
+button:active { background-color: #219653; }
          
