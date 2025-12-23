@@ -44,8 +44,18 @@ td {
   background-color: #EB5757;
 }
 
-
-
+p{
+    font-size: 19px;
+    color: #F4C542;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#puntos {
+    font-size: 20px;
+    color: #ffe49a;
+    text-align: center;
+    margin-bottom: 20px;
+}
 .botones {
             margin-top: 30px;
             margin-left: auto;
