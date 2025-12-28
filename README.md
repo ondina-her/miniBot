@@ -4,7 +4,7 @@
 
 # Clonar el repositorio
 git clone https://github.com/ondina-her/miniBot.git
-cd minijuego
+cd miniBot
 
 # Requisitos previos
 - Python 3.9 o superior
