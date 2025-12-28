@@ -3,7 +3,7 @@
 “Un minijuego en Flask donde un robot se mueve en un tablero 5x5, sumando o restando puntos según las casillas (verdes +5, rojas -2, neutras 0).”
 
 # Clonar el repositorio
-git clone https://github.com/tuusuario/minijuego.git
+git clone https://github.com/ondina-her/miniBot.git
 cd minijuego
 
 # Requisitos previos
