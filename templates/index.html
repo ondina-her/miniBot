@@ -11,21 +11,32 @@
     <h1>Mini Robot Web</h1>
     <h2>Puntos: {{puntos}}</h1>
 
-    <table>
-        {% for i in range(5) %}
-        <tr>
-            {% for j in range(5) %}
-            <td>
-                {% if [i, j] == posicion %}
-                    🤖
-                {% else %}
-                    ⬜
-                {% endif %}
-            </td>
-            {% endfor %}
-        </tr>
-        {% endfor %}
-    </table>
+<table>
+  {% for i in range(5) %}
+    <tr>
+      {% for j in range(5) %}
+        {% set clase = '' %}
+        {% if posicion[0] == i and posicion[1] == j %}
+          {% set clase = clase + 'robot ' %}  
+        {% endif %}
+        {% if tabla[i][j] in verdes %}
+          {% set clase = clase + 'green ' %}
+        {% endif %}
+        {% if tabla[i][j] in rojos %}
+          {% set clase = clase + 'red ' %}
+        {% endif %}
+       <td class="{{ clase.strip() }}">
+          {% if posicion[0] == i and posicion[1] == j %}
+              🤖
+          {% else %}
+            .
+          {% endif %}
+        </td>
+      {% endfor %}
+    </tr>
+  {% endfor %}
+</table>
+
 
     <form method="post">
     <div class="botones">
