@@ -12,4 +12,18 @@ Thumbs.db
 .vscode/
 
 # Archivos de entorno
+.env/
+venv/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor configs
+.vscode/
+
+# Environment variables
 .env
+
+# Logs
+*.log

@@ -40,6 +40,9 @@ Ran 4 tests in 26.659s
 OK
 ```
 
+# Capturas de pantalla
+[CapPantalla](image.png)
+
 # Estructura del proyecto
 
 ```
